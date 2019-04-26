@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FATRI预警系统</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="help_entry_setting">长按主页面进入设置！</string>
+    <string name="title_activity_map_setting">蛛网系统</string>
+    <string name="location_fail">定位失败，正在重新定位..</string>
+    <string name="in_the_location">定位中..</string>
+    <string name="alarm_distance">预警距离</string>
+    <string name="set_alarm_distance_title">设定预警距离,单位米</string>
+</resources>

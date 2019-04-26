@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context="com.emt.fatri.wearbaidusdkdemo.ui.SettingsActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:boxedEdges="all">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加传感器"/>
+            <EditText
+                android:id="@+id/edit_text"
+                android:inputType="number"
+                android:maxLength="2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设定结束"/>
+
+    </LinearLayout>
+</android.support.wear.widget.BoxInsetLayout>
+

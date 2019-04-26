@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starts_background"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context="com.emt.fatri.wearbaidusdkdemo.ui.MapSizeSettingActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:boxedEdges="all">
+
+        <TextView
+            android:id="@+id/alarm_distance_title_text"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="@string/set_alarm_distance_title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/alarm_distance"/>
+            <EditText
+                android:id="@+id/edit_text"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:maxLength="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="设定结束"/>
+
+    </LinearLayout>
+</android.support.wear.widget.BoxInsetLayout>
+

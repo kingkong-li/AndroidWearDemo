@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starts_background"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context="com.emt.fatri.wearbaidusdkdemo.ui.SettingsEntranceActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:boxedEdges="all">
+
+        <Button
+            android:id="@+id/setting_entry_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/transparent"
+            android:text="开始设置" />
+
+        <Button
+            android:id="@+id/check_history_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:text="历史警报" />
+        <Button
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:text="帮助" />
+    </LinearLayout>
+</android.support.wear.widget.BoxInsetLayout>
+
